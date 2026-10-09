@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "kardscraft",
+  "version": "${version}",
+  "name": "KardsCraft",
+  "description": "Minecraft on a KARDS training table",
+  "authors": ["TOOOOOOBY-Q"],
+  "license": "MIT",
+  "contact": {
+    "sources": "https://github.com/TOOOOOOBY-Q/kardscraft",
+    "issues": "https://github.com/TOOOOOOBY-Q/kardscraft/issues"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "main": ["dev.invasion.kardscraft.KardsCraft"],
+    "client": ["dev.invasion.kardscraft.client.KardsCraftClient"]
+  },
+  "mixins": ["kardscraft.mixins.json"],
+  "depends": {"fabricloader": ">=0.16.0", "minecraft": "1.21.1", "java": ">=21", "fabric-api": "*"}
+}
